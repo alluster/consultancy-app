@@ -22,12 +22,11 @@ class Home extends Component {
           
       })
     componentDidMount() {
-
         this.fetchPosts().then(this.setPosts);
       }
       fetchPosts = () => this.client.getEntries(
         {
-            'fields.slug': this.props.location.pathname.slice(1),
+            'fields.slug': "home",
             'content_type': 'site'
           }
       )

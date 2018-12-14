@@ -22,15 +22,18 @@ class About extends Component {
       })
     componentDidMount() {
 
+
         this.fetchPosts().then(this.setPosts);
       }
       fetchPosts = () => this.client.getEntries(
+        
         {
             'content_type': 'site',
             'fields.slug': this.props.location.pathname.slice(1),
 
           }
       )
+
       setPosts = response => {
         this.setState({
           posts: response.items,
@@ -71,7 +74,7 @@ class About extends Component {
 
     return (    
       <div>
-        <Navigation dark/>
+        <Navigation />
       <Hero 
         heroImage={heroImage}
         heroHeader={heroHeader}
