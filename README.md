@@ -1,6 +1,4 @@
-# React with SCSS & Bootstrap
-
-Bootstrap SASS project. Bootstrap verison 3.xx Bootstrap-sass module copied to the src/styles folder from node_modules and used from there.
+# React, Redux, Contentful CMS + SCSS 
 
 SCSS files are imported from component specific folders and transpiled into index.css witch is imported to the src/app.js file.
 
